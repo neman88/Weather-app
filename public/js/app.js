@@ -1,5 +1,3 @@
-console.log("client side javascript code is loaded");
-
 fetch("http://puzzle.mead.io/puzzle").then((response) => {
   console.log(response);
   response.json().then((data) => {
