@@ -9,6 +9,7 @@ const app = express();
 console.log(__dirname);
 console.log(path.join(__dirname, "../public"));
 
+const port = process.env.PORT || 3000;
 // define paths for express config
 const publicDirectoryPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates/views");
@@ -104,6 +105,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Server is up");
 });
