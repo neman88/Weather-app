@@ -7,7 +7,7 @@ fetch("http://puzzle.mead.io/puzzle").then((response) => {
 
 const fetchData = (co) => {
   fetch(
-    `https://api.openweathermap.org/geo/1.0/reverse?lat=${co[1]}&lon=${co[0]}&limit=5&appid=1f397ae74104ce2c4edb862a779b2a21`
+    `api.openweathermap.org/geo/1.0/reverse?lat=${co[1]}&lon=${co[0]}&limit=5&appid=1f397ae74104ce2c4edb862a779b2a21`
   ).then((response) => {
     response.json().then((data) => {
       if (data.message) {
